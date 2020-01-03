@@ -1,7 +1,8 @@
 <template>
   <div id="GatewayList" class="pt-5">
     <v-subheader class="font-weight-light display-1">Sale</v-subheader>
-
+    <v-subheader class="font-weight-light display-1">path:</v-subheader>
+    <v-subheader class="font-weight-light display-1">Authentication:</v-subheader>
     <v-list-item v-for="item in items" :key="`${item.method}-${item.path}`">
       <!-- <v-list-item-avatar>
         <v-icon :class="[item.iconClass]" v-text="item.icon"></v-icon>
@@ -34,33 +35,33 @@ export default {
   data: () => ({
     items: [
       {
-        name:"Sale",
+        name: "Sale",
         method: "POST",
         path: "/Sale"
       },
       {
-        name: 'Sale',
+        name: "Sale",
         method: "GET",
         path: "/Sale"
       },
       {
-        name: 'Sale',
+        name: "Sale",
         method: "GET",
         path: "/Sale/:SaleId"
       },
       {
-        name: 'Sale',
+        name: "Sale",
         method: "PUT",
         path: "/Sale/:SaleId"
       },
       {
-        name: 'Sale',
+        name: "Sale",
         method: "DELETE",
         path: "/Sale/:SaleId"
       }
     ],
     color: String
-  }),
+  })
 };
 </script>
 <style scoped>
